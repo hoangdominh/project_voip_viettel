@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="voip_codec_view_form" model="ir.ui.view">
+        <field name="name">voip.codec form view</field>
+        <field name="model">voip.codec</field>
+        <field name="arch" type="xml">
+      	    <form>
+      	        <header>
+
+      	        </header>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="payload_type"/>
+                        <field name="encoding"/>
+                        <field name="sample_rate"/>
+                        <field name="payload_size"/>
+                    </group>
+                    <group>
+                        <field name="sample_interval"/>
+                        <field name="supported"/>
+                        <field name="sdp_data"/>
+                        <field name="riff_audio_encoding_value"/>
+                    </group>
+                </group>
+      	    </form>
+        </field>
+    </record>
+
+    <record id="voip_codec_view_tree" model="ir.ui.view">
+        <field name="name">voip.codec tree view</field>
+        <field name="model">voip.codec</field>
+        <field name="arch" type="xml">
+      	    <tree>
+      	        <field name="name"/>
+                <field name="payload_type"/>
+                <field name="sample_interval"/>
+                <field name="supported"/>
+      	    </tree>
+        </field>
+    </record>
+
+    <record id="voip_codec_action" model="ir.actions.act_window">
+        <field name="name">VOIP Codec</field>
+        <field name="res_model">voip.codec</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>
+                No VOIP Codec
+            </p>
+        </field>
+    </record>
+
+</odoo>
