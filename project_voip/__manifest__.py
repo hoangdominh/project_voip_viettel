@@ -30,7 +30,7 @@
     'depends': ['web','crm','bus','base'],
     'qweb': [],
     'images':[
-
+        # 'static/description/icon.png',
     ],
     'installable': True,
     'application': True,

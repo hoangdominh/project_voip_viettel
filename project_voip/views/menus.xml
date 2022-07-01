@@ -8,7 +8,9 @@
 
         <menuitem id="voip_parent_menuroot"
                   name="Voip"
-                  sequence="10"/>
+                  sequence="10"
+                  web_icon="project_voip,static/description/icon.png"
+        />
 
         <menuitem id="voip_parent_menu"
                   name="Config"
